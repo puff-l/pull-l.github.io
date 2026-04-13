@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | [你的名字]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+    </nav>
+
+    <!-- 项目1：欺诈检测 -->
+    <div class="project-card">
+        <div class="project-title">💳 Credit Card Fraud Detection</div>
+        <div class="project-date">Group Project | Dec 2024</div>
+
+        <div class="project-detail"><strong>Problem:</strong> Credit card fraud causes financial losses and erodes trust. Need a model to detect rare fraud cases from 284k transactions.</div>
+        <div class="project-detail"><strong>Data:</strong> Kaggle ULB dataset, 30 anonymized features (V1–V28, Time, Amount), only 0.17% fraud.</div>
+        <div class="project-detail"><strong>Approach:</strong> Compared Logistic Regression, Decision Tree, Random Forest. Used stratified split, GridSearchCV, F1-score due to imbalance.</div>
+        <div class="project-detail"><strong>Outcome / Impact:</strong> Random Forest achieved <strong>F1=0.839, Precision=0.961, ROC-AUC=0.947</strong>, greatly reducing false positives.</div>
+        <div class="project-detail"><strong>My contribution:</strong> Implemented model training pipeline, hyperparameter tuning, and evaluation metrics.</div>
+        <div class="links">
+            🔗 <a href="https://github.com/puff-1/Group-Project-Report-Credit-Card-Fraud-Detection" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+
+    <!-- 项目2：GridWorld Q-learning -->
+    <div class="project-card">
+        <div class="project-title">🎮 GridWorld Maze with Q-Learning</div>
+        <div class="project-date">Individual Project | Nov 2024</div>
+
+        <div class="project-detail"><strong>Problem:</strong> An agent must navigate from start to goal while avoiding walls and traps, demonstrating reinforcement learning.</div>
+        <div class="project-detail"><strong>Data:</strong> Custom 10×10 grid maps (5 fixed layouts) with start, goal, traps, bonuses, walls.</div>
+        <div class="project-detail"><strong>Approach:</strong> Tabular Q-learning with ε-greedy exploration, reward shaping, curriculum training across 4 maps + 1 unseen test map.</div>
+        <div class="project-detail"><strong>Outcome / Impact:</strong> Agent learns near-optimal policies; success rate increases, steps decrease. Greedy inference works on new maps.</div>
+        <div class="project-detail"><strong>My contribution:</strong> Full design and implementation of environment, Q-learning algorithm, Pygame UI, and training visualizations.</div>
+        <div class="links">
+            🎥 <a href="https://youtu.be/ON8cKeUvClk" target="_blank">Demo Video</a> &nbsp;|&nbsp;
+            💻 <a href="https://github.com/puff-l/gridworld_qlearn" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="index.html" class="button" style="background:#f3d0e0; color:#c2418c;">← Back to Home</a>
+    </footer>
+</div>
+</body>
+</html>
